@@ -32,7 +32,16 @@ const AddReviews = () => {
                             <input defaultValue={user.displayName} {...register("name", { required: true })} placeholder="Name" />
                             <input defaultValue={user.email} {...register("email", { required: true })} placeholder="Email" />
                             <textarea {...register("review", { required: true })} placeholder="Review" />
-                            <input type="number" {...register("rating", { required: true })} placeholder="Rating" />
+                            {/* <input type="number" {...register("rating", { required: true })} placeholder="Rating" /> */}
+                            <select {...register("rating")}>
+                                <option value="0">Rating</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="4">5</option>
+                            </select>
                             <input {...register("img")} placeholder="image url" />
                             <input type="submit" className="bg-primary text-white fw-bold" />
                         </form>
