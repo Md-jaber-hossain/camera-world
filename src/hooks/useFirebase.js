@@ -14,6 +14,7 @@ const useFirebase = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [isLoading, setIsLoading] = useState(true);
+    const [isAdminLoading, setIsAdminLoading] = useState(true);
     const [message, setMessage] = useState("");
     const [admin, setAdmin] = useState(false);
 
@@ -88,7 +89,7 @@ const useFirebase = () => {
                 updateRegisterInfo();
                 verifyEmail();
                 // setMessage('Register Done');
-                window.location.reload()
+                // window.location.reload()
             })
             .catch((error) => {
                 setError('fail to register');
@@ -99,8 +100,8 @@ const useFirebase = () => {
             displayName: name,
         })
             .then(() => {
-                // const newUser = { ...user, displayName: name };
-                // setUser(newUser);
+                const newUser = { ...user, displayName: name, email: email };
+                setUser(newUser);
             })
             .catch((error) => { });
     };
@@ -113,9 +114,13 @@ const useFirebase = () => {
     };
 
     useEffect(() => {
+        setIsAdminLoading(true)
         fetch(`http://localhost:5000/users/${user.email}`)
             .then(res => res.json())
-            .then(data => setAdmin(data.admin))
+            .then(data => {
+                setAdmin(data.admin)
+                setIsAdminLoading(false)
+            })
     }, [user.email])
 
     const saveUser = (email, displayName, method) => {
@@ -131,6 +136,7 @@ const useFirebase = () => {
     }
 
     return {
+        isAdminLoading,
         admin,
         saveUser,
         user,

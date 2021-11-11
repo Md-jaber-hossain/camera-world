@@ -10,6 +10,8 @@ import AdminRoute from './AdminRoute/AdminRoute';
 import AddProducts from '../AddProducts/AddProducts';
 import AllProducts from './AllProducts/AllProducts';
 import MyOrders from '../MyOrders/MyOrders';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
+import WelcomeDashboard from '../UserDashboard/WelcomeDashboard/WelcomeDashboard';
 
 
 const Dashboard = () => {
@@ -29,9 +31,14 @@ const Dashboard = () => {
                                     <i className="fas fa-caret-right"></i> Home
                                 </li>
                                 </Link>
+                                {/* <Link to={`${url}`} className="all-list">
+                                    <li className="dashboard-menu p-2 ps-5 text-white">
+                                        <i className="fas fa-caret-right"></i> a
+                                    </li>
+                                </Link> */}
                                 {/* -------Users------ */}
                                 {!admin ? <div>
-                                    <Link to={`${url}`} className="all-list">
+                                    <Link to={`${url}/myOrder`} className="all-list">
                                         <li className="dashboard-menu p-2 ps-5 text-white">
                                             <i className="fas fa-caret-right"></i> My Orders
                                         </li>
@@ -48,30 +55,30 @@ const Dashboard = () => {
                                     </Link>
                                 </div>
 
-                                :
-                                // -------Admin------------
-                                <div>
-                                    <Link to={`${url}/allProducts`} className="all-list">
-                                        <li className="dashboard-menu p-2 ps-5 text-white">
-                                            <i className="fas fa-caret-right"></i> Manage All Products
-                                        </li>
-                                    </Link>
-                                    <Link to={`${url}/allOrders`} className="all-list">
-                                        <li className="dashboard-menu p-2 ps-5 text-white">
-                                            <i className="fas fa-caret-right"></i> Manage All Orders
-                                        </li>
-                                    </Link>
-                                    <Link to={`${url}/addProduct`} className="all-list">
-                                        <li className="dashboard-menu p-2 ps-5 text-white">
-                                            <i className="fas fa-caret-right"></i> Add Product
-                                        </li>
-                                    </Link>
-                                    <Link to={`${url}/makeAdmin`} className="all-list">
-                                        <li className="dashboard-menu p-2 ps-5 text-white">
-                                            <i className="fas fa-caret-right"></i> Make Admin
-                                        </li>
-                                    </Link>
-                                </div>}
+                                    :
+                                    // -------Admin------------
+                                    <div>
+                                        <Link to={`${url}/allProducts`} className="all-list">
+                                            <li className="dashboard-menu p-2 ps-5 text-white">
+                                                <i className="fas fa-caret-right"></i> Manage All Products
+                                            </li>
+                                        </Link>
+                                        <Link to={`${url}/allOrders`} className="all-list">
+                                            <li className="dashboard-menu p-2 ps-5 text-white">
+                                                <i className="fas fa-caret-right"></i> Manage All Orders
+                                            </li>
+                                        </Link>
+                                        <Link to={`${url}/addProduct`} className="all-list">
+                                            <li className="dashboard-menu p-2 ps-5 text-white">
+                                                <i className="fas fa-caret-right"></i> Add Product
+                                            </li>
+                                        </Link>
+                                        <Link to={`${url}/makeAdmin`} className="all-list">
+                                            <li className="dashboard-menu p-2 ps-5 text-white">
+                                                <i className="fas fa-caret-right"></i> Make Admin
+                                            </li>
+                                        </Link>
+                                    </div>}
                                 {user?.email &&
                                     <div className="p-2 ps-5">
                                         <button className=" btn btn-primary" onClick={logout}>Logout</button>
@@ -83,16 +90,19 @@ const Dashboard = () => {
                     {/* -----All details show from user and admin---- */}
                     <div className="col-md-10">
                         <Switch>
+                            <PrivateRoute exact path={path}>
+                                <WelcomeDashboard></WelcomeDashboard>
+                            </PrivateRoute>
                             {/* --------user---------- */}
-                            <Route exact path={path}>
+                            <PrivateRoute exact path={`${path}/myOrder`}>
                                 <MyOrders></MyOrders>
-                            </Route>
-                            <Route exact path={`${path}/payment`}>
+                            </PrivateRoute>
+                            <PrivateRoute exact path={`${path}/payment`}>
                                 <Payment></Payment>
-                            </Route>
-                            <Route exact path={`${path}/review`}>
+                            </PrivateRoute>
+                            <PrivateRoute exact path={`${path}/review`}>
                                 <AddReviews></AddReviews>
-                            </Route>
+                            </PrivateRoute>
 
                             {/* -------Admin--------- */}
                             <AdminRoute path={`${path}/allProducts`}>

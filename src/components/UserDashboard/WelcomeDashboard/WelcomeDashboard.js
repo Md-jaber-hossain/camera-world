@@ -1,0 +1,20 @@
+import React from 'react';
+
+const WelcomeDashboard = () => {
+    return (
+        <>
+            <div className="text-center mt-5">
+                <h1 className="fw-bold">Welcome To <span className="text-primary">Dashboard</span> </h1>
+            </div>
+            <div className=" text-center mx-auto my-5">
+                <img
+                    className="image-fluid w-50 h-75"
+                    src="https://i.ibb.co/8nk3dVj/undraw-Control-panel-re-y3ar.png"
+                    alt=""
+                />
+            </div>
+        </>
+    );
+};
+
+export default WelcomeDashboard;

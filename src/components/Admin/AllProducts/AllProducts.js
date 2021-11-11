@@ -55,7 +55,7 @@ const AllProducts = () => {
                 {
                     products.map((pd) => <div key={pd._id}>
                         <div className="container my-5">
-                            <div className="col" data-aos="flip-down" data-aos-easing="ease-in-out" data-aos-delay="400">
+                            <div className="col">
                                 <div className="card h-100 home-card-styles">
                                     <div className="img-zoom">
                                         <img src={pd?.img} className="card-img-top img-style" alt="..." />

@@ -5,8 +5,8 @@ import useAuth from '../../../hooks/useAuth';
 
 const AdminRoute = ({ children, ...rest }) => {
     // const {children, ...rest} = props;
-    const { user, isLoading, admin } = useAuth();
-    if (isLoading) {
+    const { user, isLoading, admin, isAdminLoading } = useAuth();
+    if (isAdminLoading) {
         return <div className="text-center">
             <div className="spinner-border text-info" role="status">
                 <span className="sr-only">Loading...</span>
@@ -17,14 +17,14 @@ const AdminRoute = ({ children, ...rest }) => {
         // ----Admin route for redirecting login page to expected page-----//
         <Route
             {...rest}
-            render={({ location }) => user.email && admin ?
-                children :
+            render={({ location }) => user.email && admin ? (
+                children) : (
                 <Redirect
                     to={{
                         pathname: '/home',
                         state: { from: location }
                     }}
-                ></Redirect>}
+                ></Redirect>)}
         >
 
         </Route>
