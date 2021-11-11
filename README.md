@@ -15,4 +15,3 @@ Camera-World is a camera niche related react and Mongodb website. The website is
 
 * User can easily buy a camera by clicking a Order Now button in the section of camera product of home page and Explore More page. For ordering a product, user should be completed login in or registration. After login, they have to enter purchase address then after clicking submit button, their order will be placed. User can give star review from the dashboard in the section of Add review. If users want, they can cancel their order from my order section. By dashboad, Admin can delete all products. Admin can update status pending to approved from all orders. If admin wants, he/she can add products. Only Admin can make anyone admin. 
 
-# niche-website-client-side-Md-jaber-hossain
