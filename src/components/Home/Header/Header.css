@@ -1,0 +1,44 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  /* background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(238, 248, 247)); */
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  overflow-x: hidden;
+}
+/* Header style */
+.header {
+  /* height: 500px; */
+  /* background-blend-mode: overlay; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* title style */
+.title-header{
+  font-size: 50px;
+}
+/* button style */
+.button {
+  padding: 10px 40px;
+  color: white;
+}
+.input-group{
+  width: 700px;
+}
+.img-height{
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  opacity: 0.5;
+}
+.black1{
+    background: black;
+    overflow: hidden;
+}
+.detail-margin{
+  margin-bottom: 180px;
+}

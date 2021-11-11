@@ -1,0 +1,16 @@
+.input-width input{
+    width: 400px;
+    border: none;
+    border-bottom: 2px solid gray;
+    border-top: 2px solid gray;
+}
+
+/* mobile */
+@media only screen and (max-width:688px){
+    .input-width input{
+        width: 200px;
+        border: none;
+        border-bottom: 2px solid gray;
+        border-top: 2px solid gray;
+    }
+  }

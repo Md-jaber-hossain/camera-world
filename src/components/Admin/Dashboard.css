@@ -1,0 +1,41 @@
+.dashboard-area {
+    background: rgb(3, 14, 24);
+    color: rgb(255, 255, 255);
+    height: 130vh;
+    /* width: 35vh; */
+    /* margin-top: 50px; */
+    /* position: fixed; */
+}
+.dashboard-container {
+  overflow-x: hidden;
+}
+.dashboard-menu {
+  list-style: none;
+  cursor: pointer;
+}
+.dashboard-menu:hover {
+  color: rgb(0, 140, 255);
+  background-color: rgb(2, 34, 80);
+}
+.all-list{
+  text-decoration: none;
+}
+.text-color{
+  color: rgb(0, 195, 255);
+}
+
+
+  /* Media query for responsive */
+
+/* mobile */
+@media only screen and (max-width:688px){
+  .dashboard-area {
+    background: rgb(2, 12, 26);
+    color: rgb(255, 255, 255);
+    height: 60vh;
+    /* width: 35vh; */
+    /* margin-top: 100px; */
+    /* margin: auto; */
+    /* position: fixed; */
+  }
+}

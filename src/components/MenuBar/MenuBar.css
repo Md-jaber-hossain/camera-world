@@ -1,0 +1,44 @@
+/* Navbar style */
+.menuBar-bg{
+  background-color: #ffffff;
+}
+.list{
+  list-style: none;
+  margin-right: 15px;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  /* padding: 5px; */
+  text-decoration: none;
+}
+/* Hover for NavLink */
+.list:hover {
+  color: rgb(18, 137, 248);
+  border-radius: 15px;
+}
+.signup-btn-style{
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(18, 137, 248);
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-weight: 700;
+}
+
+/* Mobile */
+/* @media only screen and (max-width:688px){
+  
+} */
+/* tablet */
+/* @media only screen and (min-width: 688px ) and (max-width: 992px ) {
+  
+  
+} */
+/* computer */
+/* @media only screen and (min-width: 992px ) and (max-width: 1312px ) {
+  
+} */
+
+  

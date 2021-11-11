@@ -1,0 +1,62 @@
+/* Footer style */
+.footer-menu{
+  list-style: none;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* footer body */
+.footer-container{
+  background-color: #020107;
+  padding: 50px;
+  color: rgb(225, 231, 238);
+}
+.footer-container p:hover{
+  color: rgb(90, 142, 255);
+  cursor: text;
+}
+ /* Icon hover */
+ .fa-phone-alt{
+  color: rgb(90, 142, 255);
+}
+ .fa-envelope{
+  color: rgb(90, 142, 255);
+}
+.fa-map-marker-alt{
+  color: rgb(90, 142, 255);
+}
+
+.fa-facebook-square:hover{
+  color: rgb(90, 142, 255);
+}
+.twitter:hover{
+  color: rgb(90, 142, 255);
+}
+.fa-instagram:hover{
+  color: rgb(90, 142, 255);
+}
+.fa-reddit-square:hover{
+  color: rgb(90, 142, 255);
+}
+.border-style{
+  border-bottom: #f5f5f5;
+  border-bottom: 3px solid rgb(47, 103, 255);
+  width: 130px;
+  padding: 5px;
+}
+.border-style-left{
+  border-bottom: #f5f5f5;
+  border-left: 3px solid rgb(47, 103, 255);
+  width: 130px;
+  padding: 5px;
+}
+.border-style2{
+  border-bottom: #f5f5f5;
+  border-bottom: 3px solid rgb(47, 103, 255);
+  width: 150px;
+  padding: 5px;
+}
+.p-color{
+  color: rgb(183, 198, 241);
+}
+  

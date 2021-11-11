@@ -1,0 +1,20 @@
+.Add-Review-main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Add-Review-main input, textarea{
+    width: 70%;
+    margin-bottom: 10px;
+}
+.AddReview-form input, textarea{
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    /* border: 1px solid gray; */
+    border: none;
+    background-color: rgb(241, 237, 237);
+    border-radius: 5px;
+
+}

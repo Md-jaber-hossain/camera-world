@@ -1,0 +1,114 @@
+[
+    {
+      "id": 1,
+      "name": "Nikon Z5",
+      "price": "700",
+      "description": "The best entry-level full-frame camera you can buy right now",
+      "img": "https://i.ibb.co/CKm6pk6/kr-YZU8y-Hs-Tykv5e-MVz-Qg-M4-970-80-jpg.webp"
+    },
+    {
+      "id": 2,
+      "name": "Panasonic Lumix S5",
+      "price": "1900",
+      "description": "A compact full-frame camera that's equally adept at stills and video",
+      "img": "https://i.ibb.co/wwWyXBC/weik-K6i-ZNVZmxz-Cr-Bsqo-LK-970-80-jpg.webp"
+    },
+    {
+      "id": 3,
+      "name": "Nikon D3500",
+      "price": "800",
+      "description": "The best beginner-friendly DSLR you can buy",
+      "img": "https://i.ibb.co/fvbsX7L/ajj-JB6-ZAYH67-XM5-B3xo74-G-970-80-jpg.webp"
+    },
+    {
+      "id": 4,
+      "name": "Sony A6100",
+      "price": "950",
+      "description": "A good value option for beginners and hobbyists alike",
+      "img": "https://i.ibb.co/BZ7v1Jy/Efq-SNie-Cxpu-Gws-VSP7-J8-Dh-970-80-jpg.webp"
+    },
+    {
+      "id": 5,
+      "name": "Olympus Mark IV",
+      "price": "600",
+      "description": "One of the best cameras around for beginners",
+      "img": "https://i.ibb.co/t2177w8/rhmtjhr-BK4gkq-EXYot-Xev-R-970-80-jpg.webp"
+    },
+    {
+      "id": 6,
+      "name": "Nikon Z7 II",
+      "price": "1300",
+      "description": "The best landscape photography choice for Nikon fans",
+      "img": "https://i.ibb.co/ZhxXdb7/Pk-VXG3-Fis-XF4u-Jw-Hcsu-Rs6-970-80-jpg.webp"
+    },
+    {
+      "id": 7,
+      "name": "Sony A1",
+      "price": "1750",
+      "description": "Astonishing performance at an astonishing price",
+      "img": "https://i.ibb.co/x1pLhC4/cp-Dh-Le8-EBGBhsin-WLide-H-970-80-jpg.webp"
+    },
+    {
+      "id": 8,
+      "name": "Fujifilm X100V",
+      "price": "1470",
+      "description": "The best camera for street photography",
+      "img": "https://i.ibb.co/47YQW83/Fu-Tr-FHRYjo7-F8-Joj-Srcz-EG-970-80-jpg.webp"
+    },
+    {
+      "id": 9,
+      "name": "Nikon Z fc",
+      "price": "830",
+      "description": "A heady design and mirrorless shooting power",
+      "img": "https://i.ibb.co/0ZhQCw3/cq9r9-Di-Lt-T6-Tij4-Zs2e-JB3-970-80-jpg.webp"
+    },
+    {
+      "id": 10,
+      "name": "Sony A7R IV",
+      "price": "4240",
+      "description": "A brilliant choice for landscape photographers",
+      "img": "https://i.ibb.co/nf47kWx/dz-DWYxps-XBv-Vt-NBd8-Cuao8-970-80-jpg.webp"
+    },
+    {
+      "id": 11,
+      "name": "Fujifilm X-S10",
+      "price": "1750",
+      "description": "A versatile little all-rounder for hobbyist photographers",
+      "img": "https://i.ibb.co/bbtfmqN/ai4qf3-ETLLvm-YK2-Ztc-Q4b9-970-80-jpg.webp"
+    },
+    {
+      "id": 12,
+      "name": "Nikon Z6 II",
+      "price": "2680",
+      "description": "No longer the mirrorless king, but not far behind",
+      "img": "https://i.ibb.co/y5H2nLk/JN4id4e-Q79r4c4-Jz-HVNt-H5-970-80-jpg.webp"
+    },
+    {
+      "id": 13,
+      "name": "Canon EOS R5",
+      "price": "2900",
+      "description": "The finest hybrid camera Canon has ever made",
+      "img": "https://i.ibb.co/0YBFvZt/fj-Nx-B4-UTBg-V8-WSx-LNKstq-T-970-80-jpg.webp"
+    },
+    {
+      "id": 14,
+      "name": "Canon EOS R6",
+      "price": "3600",
+      "description": "A superb camera with best-in-class features",
+      "img": "https://i.ibb.co/pZ6s6fW/ch-Xq-Wj9w-ZX4-PYv-Qpn-Foh-XK-970-80-jpg.webp"
+    },
+    {
+      "id": 15,
+      "name": "Fujifilm X-T4",
+      "price": "5600",
+      "description": "The best all-round camera for most people",
+      "img": "https://i.ibb.co/3T7tXXj/QPy42y2-PAHXk-Kmq-La-VKhz-V-970-80-jpg-1.webp"
+    },
+    {
+      "id": 16,
+      "name": "Canon SX70 HS",
+      "price": "600",
+      "description": "The Canon PowerShot SX70 HS captures views to all",
+      "img": "https://i.ibb.co/4mvQmJ7/03lo9-Rs-Lz-Rw3txoe-Ex-Na-EHW-38-1574731241-fit-lim-size-238x139.jpg"
+    }
+  ]

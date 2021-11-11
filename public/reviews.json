@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "Mary swift",
+      "review": "The best camera I haved purchased in this website.",
+      "img": "https://i.ibb.co/tCwwTGp/pexels-marcelo-chagas-1854897.jpg",
+      "rating": "3"
+    },
+    {
+      "id": 2,
+      "name": "Martim Abraham",
+      "review": "It is more trustable and loyal website for everybody",
+      "img": "https://i.ibb.co/V3y8Pkt/pexels-rafael-barros-1728163.jpg",
+      "rating": "5"
+    },
+    {
+      "id": 3,
+      "name": "Helisa winy",
+      "review": "Feel free to buy here. They just give you best of camera",
+      "img": "https://i.ibb.co/tCwwTGp/pexels-marcelo-chagas-1854897.jpg",
+      "rating": "4"
+    }
+  ]

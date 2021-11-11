@@ -1,0 +1,25 @@
+.Products-table-inner{
+    border-bottom: 1px solid rgb(185, 182, 182);
+}
+
+/* Media query for responsive */
+
+/* mobile */
+@media only screen and (max-width:688px){
+    .Products-table{
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
+}
+/* tablet */
+@media only screen and (min-width: 688px ) and (max-width: 992px ) {
+    .Products-table{
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
+    
+}
+ /* computer */
+@media only screen and (min-width: 992px ) and (max-width: 1312px ) {
+   
+}
