@@ -40,7 +40,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="row row-cols-1 row-cols-md-4 g-4 container mx-auto my-5">
+            <div className="row row-cols-1 row-cols-md-4 g-4 container mx-auto mt-2 mb-5">
                 <div className="col" data-aos="zoom-in-up" data-aos-easing="ease-in-out" data-aos-delay="100">
                     <div className="card h-100 card-border card-styles card-zoom">
                         <img src="https://i.ibb.co/nc3pw6m/YXENFXTph-Tsi7t7of-ZFgjn-970-80-jpg.webp" className="card-img-top mb-3" alt="..." />

@@ -20,7 +20,7 @@ const Header = () => {
             <div className="carousel-caption detail-margin">
               <h2 className="title-header">New Arrival Camera</h2>
               <p>New camera arrived for you to explore more features</p>
-              <Link to="/explore"><button className="btn btn-primary text-white"><i className="far fa-address-card"></i> Explore More</button></Link>
+              <Link to="/explore"><button className="btn btn-primary text-white"><i class="fas fa-camera-retro"></i> Explore More</button></Link>
             </div>
           </div>
           <div className="carousel-item black1">
@@ -28,7 +28,7 @@ const Header = () => {
             <div className="carousel-caption detail-margin">
               <h2 className="title-header">Height Camera featurs</h2>
               <p>A camera is an optical instrument that captures a visual image</p>
-              <Link to="/explore"><button className="btn btn-primary text-white"><i className="far fa-address-card"></i> Explore More</button></Link>
+              <Link to="/explore"><button className="btn btn-primary text-white"><i class="fas fa-camera-retro"></i> Explore More</button></Link>
             </div>
           </div>
           <div className="carousel-item black1">
@@ -36,7 +36,7 @@ const Header = () => {
             <div className="carousel-caption detail-margin">
               <h2 className="title-header">Most Popular Camera</h2>
               <p>The impact on professional photographers has been dramatic for featured camera</p>
-              <Link to="/explore"><button className="btn btn-primary text-white"><i className="far fa-address-card"></i> Explore More</button></Link>
+              <Link to="/explore"><button className="btn btn-primary text-white"><i class="fas fa-camera-retro"></i> Explore More</button></Link>
             </div>
           </div>
         </div>

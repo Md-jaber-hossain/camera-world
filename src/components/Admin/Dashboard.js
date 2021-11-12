@@ -13,6 +13,7 @@ import MyOrders from '../MyOrders/MyOrders';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import WelcomeDashboard from '../UserDashboard/WelcomeDashboard/WelcomeDashboard';
 import { Container, Navbar } from 'react-bootstrap';
+import ManageReviews from './ManageReviews/ManageReviews';
 
 
 const Dashboard = () => {
@@ -26,7 +27,7 @@ const Dashboard = () => {
                 <div className="row">
                     <div className="col-md-2">
                         <div className="dashboard-area d-none d-sm-block">
-                            <h4 className=" pt-5 ps-md-3 ps-5 text-color"><i className="fas fa-user-cog"></i>Dashboard</h4>
+                            <h4 className=" pt-5 ps-md-3 ps-5 text-color"><i class="fas fa-tasks"></i> Dashboard</h4>
                             <div className="mt-4">
                                 <Link as={Link} to="/home" className="all-list"><li className="dashboard-menu p-2 ps-5 text-white">
                                     <i className="fas fa-caret-right"></i> Home
@@ -69,6 +70,11 @@ const Dashboard = () => {
                                                 <i className="fas fa-caret-right"></i> Manage All Orders
                                             </li>
                                         </Link>
+                                        <Link to={`${url}/allReviews`} className="all-list">
+                                            <li className="dashboard-menu p-2 ps-5 text-white">
+                                                <i className="fas fa-caret-right"></i> Manage All Reviews
+                                            </li>
+                                        </Link>
                                         <Link to={`${url}/addProduct`} className="all-list">
                                             <li className="dashboard-menu p-2 ps-5 text-white">
                                                 <i className="fas fa-caret-right"></i> Add Product
@@ -92,13 +98,13 @@ const Dashboard = () => {
                         <div className="d-block d-md-none">
                             <Navbar bg="white" variant="light" sticky="top" collapseOnSelect expand="lg" >
                                 <Container>
-                                    <Navbar.Brand href="#home">
+                                    {/* <Navbar.Brand href="#home">
 
-                                    </Navbar.Brand>
+                                    </Navbar.Brand> */}
                                     <Navbar.Toggle />
                                     <Navbar.Collapse className="justify-content-end">
                                         <div className="dashboard-area">
-                                            <h4 className=" pt-5 ps-md-3 ps-5 text-color"><i className="fas fa-user-cog"></i>Dashboard</h4>
+                                            <h4 className=" pt-5 ps-md-3 ps-5 text-color"><i class="fas fa-tasks"></i>Dashboard</h4>
                                             <div className="mt-4">
                                                 <Link as={Link} to="/home" className="all-list"><li className="dashboard-menu p-2 ps-5 text-white">
                                                     <i className="fas fa-caret-right"></i> Home
@@ -134,6 +140,11 @@ const Dashboard = () => {
                                                         <Link to={`${url}/allOrders`} className="all-list">
                                                             <li className="dashboard-menu p-2 ps-5 text-white">
                                                                 <i className="fas fa-caret-right"></i> Manage All Orders
+                                                            </li>
+                                                        </Link>
+                                                        <Link to={`${url}/allReviews`} className="all-list">
+                                                            <li className="dashboard-menu p-2 ps-5 text-white">
+                                                                <i className="fas fa-caret-right"></i> Manage All Reviews
                                                             </li>
                                                         </Link>
                                                         <Link to={`${url}/addProduct`} className="all-list">
@@ -184,6 +195,9 @@ const Dashboard = () => {
                             </AdminRoute>
                             <AdminRoute path={`${path}/allOrders`}>
                                 <ManageAll></ManageAll>
+                            </AdminRoute>
+                            <AdminRoute path={`${path}/allReviews`}>
+                                <ManageReviews></ManageReviews>
                             </AdminRoute>
                             <AdminRoute path={`${path}/addProduct`}>
                                 <AddProducts></AddProducts>

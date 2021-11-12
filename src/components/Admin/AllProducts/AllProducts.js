@@ -51,25 +51,21 @@ const AllProducts = () => {
                     <h3>Total Products: {products?.length}</h3>
                 </div>
             </div>
-            <div className="row row-cols-1 row-cols-md-3 g-3">
+            <div className="row row-cols-1 row-cols-md-3 g-4">
                 {
                     products.map((pd) => <div key={pd._id}>
-                        <div className="container my-5">
-                            <div className="col">
-                                <div className="card h-100 home-card-styles">
-                                    <div className="img-zoom">
-                                        <img src={pd?.img} className="card-img-top img-style" alt="..." />
+                        <div className="col">
+                            <div className="card h-100 home-card-styles">
+                                <div className="img-zoom">
+                                    <img src={pd?.img} className="card-img-top img-style" alt="..." />
+                                </div>
+                                <div className="card-body">
+                                    <h5 className="card-title text-primary fw-bold">{pd?.name}</h5>
+                                    <p className="card-text text-secondary ">{pd?.description}</p>
+                                    <div className="d-flex justify-content-between">
+                                        <h5 className="card-text"><span className="text-primary fw-bold">Price: $ {pd?.price}</span></h5>
                                     </div>
-                                    <div className="card-body">
-                                        {/* <div className="d-flex justify-content-around"> */}
-                                        <h5 className="card-title text-primary fw-bold">{pd?.name}</h5>
-                                        {/* </div> */}
-                                        <p className="card-text text-secondary ">{pd?.description}</p>
-                                        <div className="d-flex justify-content-between">
-                                            <h5 className="card-text"><span className="text-primary fw-bold">Price: $ {pd?.price}</span></h5>
-                                        </div>
-                                        <button onClick={() => handleDelete(pd._id)} className="btn bg-danger my-3 text-white"> Delete </button>
-                                    </div>
+                                    <button onClick={() => handleDelete(pd._id)} className="btn bg-danger my-3 text-white"> Delete </button>
                                 </div>
                             </div>
                         </div>

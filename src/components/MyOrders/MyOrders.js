@@ -39,7 +39,6 @@ const MyOrders = () => {
             <h1 className="text-center fw-bold my-5">My <span className="text-primary">Order</span> List: {myproducts.length}</h1>
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 {myproducts?.map((pd, index) => (<div key={pd._id}>
-
                     <div className="col">
                         <div className="card h-100 home-card-styles">
                             <div className="img-zoom">

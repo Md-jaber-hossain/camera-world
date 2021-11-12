@@ -4,13 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Rating from "react-rating";
 
-const Reviews = () => {
-
-    // -------Animation-----//
-    useEffect(() => {
-        AOS.init();
-    }, []);
-    //--------------//
+const ManageReviews = () => {
 
     const [reviews, setReviews] = useState([]);
 
@@ -20,8 +14,29 @@ const Reviews = () => {
             .then(data => setReviews(data));
     }, []);
 
+    // ----Products delete by Admin-----//
+    const handleDelete = id => {
+        const proceed = window.confirm('Are you sure, you want to delete?');
+        if (proceed) {
+            const url = `http://localhost:5000/deleteReviews/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                    if (data.deletedCount) {
+                        alert('Deleted successfully')
+                        const remaining = reviews.filter(review => review._id !== id);
+                        setReviews(remaining);
+                    }
+
+                })
+        }
+    }
+
     return (
-        // --------Reviews page---------------//
+        // --------All Reviews for Admin---------------//
         <div id="reviewss" className="container mt-5 mb-5">
             <div className="col-md-12 text-center my-5">
                 <h2 className="fw-bold">Customer <span className="text-primary">Reviews</span></h2>
@@ -30,7 +45,7 @@ const Reviews = () => {
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 {
                     reviews.map((subreviews) => <div key={subreviews._id}>
-                        <div className="col" data-aos="flip-down" data-aos-easing="ease-in-out" data-aos-delay="400">
+                        <div className="col">
                             <div className="card h-100 home-card-styles">
                                 <div className="img-zoom">
                                     <img src={subreviews.img} className="card-img-top img-style" alt="..." />
@@ -44,6 +59,8 @@ const Reviews = () => {
                                         emptySymbol="far fa-star icon-color" fullSymbol="fas fa-star icon-color"
                                         readonly
                                     />
+                                    <br />
+                                    <button onClick={() => handleDelete(subreviews._id)} className="btn bg-danger my-3 text-white"> Delete </button>
                                 </div>
                             </div>
                         </div>
@@ -55,4 +72,4 @@ const Reviews = () => {
     );
 };
 
-export default Reviews;
+export default ManageReviews;
