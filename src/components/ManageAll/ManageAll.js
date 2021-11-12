@@ -38,7 +38,7 @@ const ManageAll = () => {
     // ---------Update Status-----------//
 
     const handleSubmit = (id) => {
-        const data = { status: 'Approved' }
+        const data = { status: 'Shipped' }
         fetch(`https://salty-fjord-68136.herokuapp.com/update/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
