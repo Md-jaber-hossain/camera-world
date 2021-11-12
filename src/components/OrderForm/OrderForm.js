@@ -37,7 +37,7 @@ const OrderForm = () => {
         data.country = detailsMatchedCard.country
         data.price = detailsMatchedCard.price
         data.description = detailsMatchedCard.description
-        data.status = "panding";
+        data.status = "Pending";
         axios.post('https://salty-fjord-68136.herokuapp.com/addOrders', data)
             .then(res => {
                 if (res.data.insertedId) {
