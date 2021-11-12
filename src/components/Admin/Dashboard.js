@@ -12,6 +12,7 @@ import AllProducts from './AllProducts/AllProducts';
 import MyOrders from '../MyOrders/MyOrders';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import WelcomeDashboard from '../UserDashboard/WelcomeDashboard/WelcomeDashboard';
+import { Container, Navbar } from 'react-bootstrap';
 
 
 const Dashboard = () => {
@@ -23,8 +24,8 @@ const Dashboard = () => {
         <div className="dashboard-container">
             <div className="dashboard">
                 <div className="row">
-                    <div className="col-md-2 ">
-                        <div className="dashboard-area">
+                    <div className="col-md-2">
+                        <div className="dashboard-area d-none d-sm-block">
                             <h4 className=" pt-5 ps-md-3 ps-5 text-color"><i className="fas fa-user-cog"></i>Dashboard</h4>
                             <div className="mt-4">
                                 <Link as={Link} to="/home" className="all-list"><li className="dashboard-menu p-2 ps-5 text-white">
@@ -86,7 +87,80 @@ const Dashboard = () => {
                                 }
                             </div>
                         </div>
+                        {/* --------Dashboard Navbar-------- */}
+
+                        <div className="d-block d-md-none">
+                            <Navbar bg="white" variant="light" sticky="top" collapseOnSelect expand="lg" >
+                                <Container>
+                                    <Navbar.Brand href="#home">
+
+                                    </Navbar.Brand>
+                                    <Navbar.Toggle />
+                                    <Navbar.Collapse className="justify-content-end">
+                                        <div className="dashboard-area">
+                                            <h4 className=" pt-5 ps-md-3 ps-5 text-color"><i className="fas fa-user-cog"></i>Dashboard</h4>
+                                            <div className="mt-4">
+                                                <Link as={Link} to="/home" className="all-list"><li className="dashboard-menu p-2 ps-5 text-white">
+                                                    <i className="fas fa-caret-right"></i> Home
+                                                </li>
+                                                </Link>
+                                                {/* -------Users------ */}
+                                                {!admin ? <div>
+                                                    <Link to={`${url}/myOrder`} className="all-list">
+                                                        <li className="dashboard-menu p-2 ps-5 text-white">
+                                                            <i className="fas fa-caret-right"></i> My Orders
+                                                        </li>
+                                                    </Link>
+                                                    <Link to={`${url}/payment`} className="all-list">
+                                                        <li className="dashboard-menu p-2 ps-5 text-white">
+                                                            <i className="fas fa-caret-right"></i> Payment
+                                                        </li>
+                                                    </Link>
+                                                    <Link to={`${url}/review`} className="all-list">
+                                                        <li className="dashboard-menu p-2 ps-5 text-white">
+                                                            <i className="fas fa-caret-right"></i> Add Review
+                                                        </li>
+                                                    </Link>
+                                                </div>
+
+                                                    :
+                                                    // -------Admin------------
+                                                    <div>
+                                                        <Link to={`${url}/allProducts`} className="all-list">
+                                                            <li className="dashboard-menu p-2 ps-5 text-white">
+                                                                <i className="fas fa-caret-right"></i> Manage All Products
+                                                            </li>
+                                                        </Link>
+                                                        <Link to={`${url}/allOrders`} className="all-list">
+                                                            <li className="dashboard-menu p-2 ps-5 text-white">
+                                                                <i className="fas fa-caret-right"></i> Manage All Orders
+                                                            </li>
+                                                        </Link>
+                                                        <Link to={`${url}/addProduct`} className="all-list">
+                                                            <li className="dashboard-menu p-2 ps-5 text-white">
+                                                                <i className="fas fa-caret-right"></i> Add Product
+                                                            </li>
+                                                        </Link>
+                                                        <Link to={`${url}/makeAdmin`} className="all-list">
+                                                            <li className="dashboard-menu p-2 ps-5 text-white">
+                                                                <i className="fas fa-caret-right"></i> Make Admin
+                                                            </li>
+                                                        </Link>
+                                                    </div>}
+                                                {user?.email &&
+                                                    <div className="p-2 ps-5">
+                                                        <button className=" btn btn-primary" onClick={logout}>Logout</button>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+
+                                    </Navbar.Collapse>
+                                </Container>
+                            </Navbar>
+                        </div>
                     </div>
+
                     {/* -----All details show from user and admin---- */}
                     <div className="col-md-10">
                         <Switch>
@@ -122,7 +196,6 @@ const Dashboard = () => {
                 </div>
             </div>
         </div>
-        // </div>
     );
 };
 
