@@ -13,6 +13,7 @@ const MakeAdmin = () => {
     })
       .then((res) => res.json())
       .then((result) => console.log(result));
+      alert('Added As Admin Successfully');
     console.log(data);
   };
   return (
@@ -33,7 +34,7 @@ const MakeAdmin = () => {
           <input
             className="submit-btn btn btn-primary text-center mt-3"
             type="submit"
-            value="make as Admin"
+            value="Make as Admin"
           />
         </form>
       </div>

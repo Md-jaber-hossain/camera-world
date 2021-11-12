@@ -26,7 +26,7 @@ const Dashboard = () => {
             <div className="dashboard">
                 <div className="row">
                     <div className="col-md-2">
-                        <div className="dashboard-area d-none d-sm-block">
+                        <div className="dashboard-area d-none d-md-block">
                             <h4 className=" pt-5 ps-md-3 ps-5 text-color"><i class="fas fa-tasks"></i> Dashboard</h4>
                             <div className="mt-4">
                                 <Link as={Link} to="/home" className="all-list"><li className="dashboard-menu p-2 ps-5 text-white">

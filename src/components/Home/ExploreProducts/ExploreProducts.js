@@ -39,12 +39,12 @@ const ExploreProducts = () => {
             {/* --------Product for Explore page---------------// */}
             <div id="products" className="container mt-5 mb-5">
                 <div className="col-md-12 text-center my-5">
-                    <h2 className="fw-bold">Our <span className="text-primary"> Products</span></h2>
+                    <h2 className="fw-bold">Camera <span className="text-primary"> Products</span></h2>
                     <p className="text-secondary text-center">Here are our details product for all of you</p>
                 </div>
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     {
-                        products.slice(6).map((subproducts) => <div key={subproducts._id}>
+                        products.map((subproducts) => <div key={subproducts._id}>
                             {/* <div className="container my-5"> */}
                                 <div className="col" data-aos="flip-down" data-aos-easing="ease-in-out" data-aos-delay="400">
                                     <div className="card h-100 home-card-styles">
