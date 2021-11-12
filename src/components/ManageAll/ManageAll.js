@@ -8,7 +8,7 @@ const ManageAll = () => {
     const [modifiedCount, setModifiedCount] = useState(0);
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://salty-fjord-68136.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => {
                 setOrders(data);
@@ -19,7 +19,7 @@ const ManageAll = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://salty-fjord-68136.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -39,7 +39,7 @@ const ManageAll = () => {
 
     const handleSubmit = (id) => {
         const data = { status: 'Approved' }
-        fetch(`http://localhost:5000/update/${id}`, {
+        fetch(`https://salty-fjord-68136.herokuapp.com/update/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

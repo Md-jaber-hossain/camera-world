@@ -16,7 +16,7 @@ const ExploreProducts = () => {
     const [products, setProduct] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://salty-fjord-68136.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setProduct(data));
     }, []);

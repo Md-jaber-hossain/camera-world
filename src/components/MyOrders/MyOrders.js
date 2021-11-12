@@ -7,7 +7,7 @@ const MyOrders = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myorders/${user.email}`)
+        fetch(`https://salty-fjord-68136.herokuapp.com/myorders/${user.email}`)
             .then((res) => res.json())
             .then((data) => setMyproducts(data));
     }, [user.email]);
@@ -16,7 +16,7 @@ const MyOrders = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://salty-fjord-68136.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

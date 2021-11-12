@@ -9,16 +9,16 @@ const ManageReviews = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://salty-fjord-68136.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => setReviews(data));
     }, []);
 
-    // ----Products delete by Admin-----//
+    // ----Review delete by Admin-----//
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/deleteReviews/${id}`;
+            const url = `https://salty-fjord-68136.herokuapp.com/deleteReviews/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
