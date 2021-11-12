@@ -46,7 +46,7 @@ const ExploreProducts = () => {
                     {
                         products.map((subproducts) => <div key={subproducts._id}>
                             {/* <div className="container my-5"> */}
-                                <div className="col" data-aos="flip-down" data-aos-easing="ease-in-out" data-aos-delay="400">
+                                <div className="col" data-aos="zoom-in-up" data-aos-easing="ease-in-out" data-aos-delay="100">
                                     <div className="card h-100 home-card-styles">
                                         <div className="img-zoom">
                                             <img src={subproducts.img} className="card-img-top img-style" alt="..." />
