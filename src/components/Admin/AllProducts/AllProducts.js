@@ -51,7 +51,7 @@ const AllProducts = () => {
                     <h3>Total Products: {products?.length}</h3>
                 </div>
             </div>
-            <div className="row row-cols-1 row-cols-md-3 g-4">
+            <div className="row row-cols-1 row-cols-md-3 g-4 mb-5 container-fluid">
                 {
                     products.map((pd) => <div key={pd._id}>
                         <div className="col">

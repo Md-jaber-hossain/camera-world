@@ -37,7 +37,7 @@ const ManageReviews = () => {
 
     return (
         // --------All Reviews for Admin---------------//
-        <div id="reviewss" className="container mt-5 mb-5">
+        <div id="reviewss" className=" container-fluid mt-5 mb-5">
             <div className="col-md-12 text-center my-5">
                 <h2 className="fw-bold">Customer <span className="text-primary">Reviews</span></h2>
                 <p className="text-secondary text-center">Our customers give this reviews. Please read and feel free to buy</p>

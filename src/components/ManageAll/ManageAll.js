@@ -57,7 +57,7 @@ const ManageAll = () => {
     return (
         // -----Manage all Order information from Menubar-----//
         <>
-            <div id="services" className="container mt-5 mb-5">
+            <div id="services" className=" container-fluid mt-5 mb-5">
                 <div className="col-md-12 text-center my-5">
                     <h2 className="fw-bold">Manage <span className="text-primary"> All</span> Orders: {orders.length}</h2>
                     <p className="text-secondary text-center">All orders from orders are below</p>

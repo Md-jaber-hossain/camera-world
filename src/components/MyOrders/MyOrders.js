@@ -35,7 +35,7 @@ const MyOrders = () => {
 
     return (
         // -------My Order information show-------//
-        <div className="container my-5">
+        <div className="container-fluid my-5">
             <h1 className="text-center fw-bold my-5">My <span className="text-primary">Order</span> List: {myproducts.length}</h1>
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 {myproducts?.map((pd, index) => (<div key={pd._id}>
