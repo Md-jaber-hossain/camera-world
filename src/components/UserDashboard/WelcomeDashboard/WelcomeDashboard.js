@@ -1,10 +1,14 @@
 import React from 'react';
+import useAuth from '../../../hooks/useAuth';
 
 const WelcomeDashboard = () => {
+    const { admin } = useAuth();
     return (
         <>
             <div className="text-center mt-5">
-                <h1 className="fw-bold">Welcome To <span className="text-primary">Dashboard</span> </h1>
+                {admin ? <h1 className="fw-bold">Welcome To <span className="text-primary">Admin Dashboard</span> </h1>
+                :
+                <h1 className="fw-bold">Welcome To <span className="text-primary">User Dashboard</span> </h1>}
             </div>
             <div className=" text-center mx-auto my-5">
                 <img

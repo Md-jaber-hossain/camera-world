@@ -56,7 +56,7 @@ const ExploreProducts = () => {
                                             <p className=" card-text text-secondary ">{subproducts.description}</p>
                                             <div className="d-flex justify-content-between">
                                                 <h5 className="card-text"><span className="text-primary fw-bold">Price: $ {subproducts.price} </span></h5>
-                                                <Link to={`/orderform/${subproducts._id}`}> <button className="btn btn-primary text-white"><i class="fas fa-shopping-cart"></i> Purchase Now</button></Link>
+                                                <Link to={`/orderform/${subproducts._id}`}> <button className="btn btn-primary text-white"><i className="fas fa-shopping-cart"></i> Purchase Now</button></Link>
                                             </div>
                                         </div>
                                     </div>

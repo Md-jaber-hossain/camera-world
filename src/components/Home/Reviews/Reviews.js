@@ -27,7 +27,7 @@ const Reviews = () => {
                 <h2 className="fw-bold">Customer <span className="text-primary">Reviews</span></h2>
                 <p className="text-secondary text-center">Our customers give this reviews. Please read and feel free to buy</p>
             </div>
-            <div className="row row-cols-1 row-cols-md-3 g-4">
+            <div className="row row-cols-1 row-cols-md-4 g-4">
                 {
                     reviews.map((subreviews) => <div key={subreviews._id}>
                         <div className="col" data-aos="flip-down" data-aos-easing="ease-in-out" data-aos-delay="400">

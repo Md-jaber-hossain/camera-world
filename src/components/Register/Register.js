@@ -10,7 +10,7 @@ const Register = () => {
 
     const history = useHistory()
     const location = useLocation()
-    const url = location.state?.from || "/home"
+    const url = location.state?.from || "/admin"
 
     const handleOnSubmit = (e) => {
         e.preventDefault();

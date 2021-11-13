@@ -27,7 +27,7 @@ const Dashboard = () => {
                 <div className="row">
                     <div className="col-md-2">
                         <div className="dashboard-area d-none d-md-block">
-                            <h4 className=" pt-5 ps-md-3 ps-5 text-color"><i class="fas fa-tasks"></i> Dashboard</h4>
+                            <h4 className=" pt-5 ps-md-3 ps-5 text-color"><i className="fas fa-tasks"></i> Dashboard</h4>
                             <div className="mt-4">
                                 <Link as={Link} to="/home" className="all-list"><li className="dashboard-menu p-2 ps-5 text-white">
                                     <i className="fas fa-caret-right"></i> Home
@@ -104,7 +104,7 @@ const Dashboard = () => {
                                     <Navbar.Toggle />
                                     <Navbar.Collapse className="justify-content-end">
                                         <div className="dashboard-area">
-                                            <h4 className=" pt-5 ps-md-3 ps-5 text-color"><i class="fas fa-tasks"></i> Dashboard</h4>
+                                            <h4 className=" pt-5 ps-md-3 ps-5 text-color"><i className="fas fa-tasks"></i> Dashboard</h4>
                                             <div className="mt-4">
                                                 <Link as={Link} to="/home" className="all-list"><li className="dashboard-menu p-2 ps-5 text-white">
                                                     <i className="fas fa-caret-right"></i> Home
@@ -189,7 +189,11 @@ const Dashboard = () => {
                                 <AddReviews></AddReviews>
                             </PrivateRoute>
 
-                            {/* -------Admin--------- */}
+                        {/* -------Admin--------- */}
+
+                            <PrivateRoute exact path={path}>
+                                <WelcomeDashboard></WelcomeDashboard>
+                            </PrivateRoute>
                             <AdminRoute path={`${path}/allProducts`}>
                                 <AllProducts></AllProducts>
                             </AdminRoute>
@@ -206,6 +210,7 @@ const Dashboard = () => {
                                 <MakeAdmin></MakeAdmin>
                             </AdminRoute>
                         </Switch>
+
                     </div>
                 </div>
             </div>

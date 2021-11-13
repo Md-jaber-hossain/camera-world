@@ -9,7 +9,7 @@ const Login = () => {
 
     const location = useLocation();
     const history = useHistory();
-    const redirect_uri = location.state?.from || '/home';
+    const redirect_uri = location.state?.from || '/admin';
 
     // Redirect current page after google login
     const handleGoogleLogin = () => {
@@ -19,6 +19,7 @@ const Login = () => {
                 saveUser(user.email, user.displayName, 'PUT');
                 history.push(redirect_uri);
             })
+            .catch((error) => { })
             .finally(() => setIsLoading(false));
     }
 

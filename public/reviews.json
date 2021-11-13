@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Mary swift",
       "review": "The best camera I haved purchased in this website.",
-      "img": "https://i.ibb.co/tCwwTGp/pexels-marcelo-chagas-1854897.jpg",
+      "img": "https://i.ibb.co/NYM9VPR/pexels-lucas-souza-1960183.jpg",
       "rating": "3"
     },
     {
@@ -19,5 +19,12 @@
       "review": "Feel free to buy here. They just give you best of camera",
       "img": "https://i.ibb.co/tCwwTGp/pexels-marcelo-chagas-1854897.jpg",
       "rating": "4"
+    },
+    {
+      "id": 4,
+      "name": "Nikolus jimi",
+      "review": "I have purchased their camera. The best camera provider",
+      "img": "https://i.ibb.co/JBdnzfV/jakob-owens-DQPP9r-VLYGQ-unsplash.jpg",
+      "rating": "3"
     }
   ]
