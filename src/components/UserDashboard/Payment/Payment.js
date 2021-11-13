@@ -3,7 +3,7 @@ import React from 'react';
 const Payment = () => {
     return (
         <>
-            <div className="text-center my-5">
+            <div className="text-center my-5 container">
                 <h1><span className="text-primary fw-bold">Payment</span> Method will be comming soon....</h1>
             </div>
             <div className=" text-center mx-auto my-5">

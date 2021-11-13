@@ -162,7 +162,7 @@ const Dashboard = () => {
                                                             </li>
                                                         </Link>
                                                     </div>}
-                                                {user?.email && <li className="list" style={{ color: "skyBlue" }}>
+                                                {user?.email && <li className="list p-2 ps-5" style={{ color: "skyBlue" }}>
                                                     {user.displayName}
                                                 </li>
                                                 }
